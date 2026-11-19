@@ -6,80 +6,57 @@ message: >
 type: software
 
 title: >
-  Robust Pixel-Wise RGB Classification under Poisson Noise:
-  TEG-DCT-XGBoost
+  Robust Pixel-Wise Remote Sensing Classification: Multi-Criteria Feature
+  Selection, Dyadic Quadrant Polling (DQP), and Machine Learning Benchmarks
 
 abstract: >
-  Research software for robust pixel-wise classification of RGB remote-sensing
-  imagery affected by signal-dependent Poisson noise. The framework combines
-  raw RGB values, Texture-Entropy-Gradient (TEG) features, local Discrete Cosine
-  Transform (DCT) ring-energy descriptors, Anscombe-based variance stabilization,
-  and XGBoost multiclass classification. The implementation supports matched-noise
-  robustness evaluation, training-data-efficiency experiments, computational
-  profiling, XGBoost feature-importance analysis based on normalized total gain,
-  and full-scene classification map generation.
+  Research software and benchmarking suite for robust pixel-wise classification
+  of remote sensing imagery (Sentinel-2) under severe sensor and environmental
+  degradation (AWGN, Poisson, and Impulse Salt & Pepper noise). The framework
+  integrates a 33-dimensional feature space combining raw spectral RGB values,
+  Texture-Entropy-Gradient (TEG) descriptors, local 2D Discrete Cosine Transform
+  (DCT) ring-energy features, and a novel asymmetric Dyadic Quadrant Polling (DQP)
+  structural descriptor. It introduces an adaptive multi-criteria feature utility
+  function (Mode B) balancing Information Gain, correlation redundancy discounting,
+  and feature extraction time penalization. The platform provides comprehensive
+  cross-model benchmarking across XGBoost (standard and lightweight), tabular
+  MLP, 1D-CNN, and Google Cloud AI TabNet architectures under real-world
+  GPU-training and CPU-inference constraints.
 
 authors:
   - family-names: Rybnytskyi
-    given-names: M. A.
+    given-names: Maksym A.
     orcid: "https://orcid.org/0009-0000-1299-1604"
     affiliation: >
       Department of Information and Communication Technologies,
       National Aerospace University «Kharkiv Aviation Institute»
 
-version: 0.1.0
+version: 1.0.0
 
-date-released: "2026-09-21"
+date-released: "2026-11-19"
 
 license: MIT
 
-# Replace this placeholder after creating the GitHub repository.
-# repository-code: "https://github.com/<username>/<repository-name>"
+repository-code: "https://github.com/mbmoon/feature_evaluation"
 
 keywords:
-  - RGB image classification
-  - pixel-wise classification
   - remote sensing
-  - Poisson noise
-  - signal-dependent noise
-  - variance-stabilizing transform
-  - Anscombe transform
+  - pixel-wise classification
+  - Sentinel-2
+  - feature engineering
+  - Dyadic Quadrant Polling
+  - DQP descriptor
+  - multi-criteria feature selection
+  - utility function
   - texture features
-  - local entropy
-  - Sobel gradient
-  - local binary patterns
-  - TEG descriptor
   - discrete cosine transform
   - DCT ring energy
+  - additive white Gaussian noise
+  - Poisson noise
+  - impulse noise
   - XGBoost
-  - feature importance
-  - total gain
-  - few-shot learning
-  - classification maps
-
-# ---------------------------------------------------------------------------
-# PREFERRED CITATION PLACEHOLDER
-# ---------------------------------------------------------------------------
-# A preferred-citation section will be added after the corresponding research
-# paper has been submitted, accepted, or published.
-#
-# Example:
-#
-# preferred-citation:
-#   type: article
-#   title: >
-#     Title of the Research Paper
-#   authors:
-#     - family-names: Rybnytskyi
-#       given-names: M. A.
-#       orcid: "https://orcid.org/0009-0000-1299-1604"
-#       affiliation: >
-#         Department of Information and Communication Technologies,
-#         National Aerospace University «Kharkiv Aviation Institute»
-#   journal: "Journal Name"
-#   year: 2026
-#   volume: 1
-#   issue: 1
-#   start: 1
-#   end: 10
-#   doi: "10.xxxx/xxxxxxxx"
+  - TabNet
+  - 1D-CNN
+  - multilayer perceptron
+  - benchmark
+  - F1-score Macro

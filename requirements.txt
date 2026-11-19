@@ -8,3 +8,4 @@ xgboost==2.1.4
 scipy
 pystac_client
 torch
+pytorch-tabnet>=4.1.0
