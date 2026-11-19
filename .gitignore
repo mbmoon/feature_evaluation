@@ -1,0 +1,48 @@
+# === Python & Bytecode ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# === Virtual Environments ===
+.venv/
+venv/
+ENV/
+env/
+my_env_name/
+
+# === OS & System Files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === Jupyter & IDEs ===
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.idea/
+
+# === Images & Figures (збереження необхідних схем для репозиторію) ===
+*.jpeg
+*.jpg
+*.png
+# Винятки для схем документації та статті:
+!dqp_geometry.png
+
+# === Data & Large Checkpoints ===
+data/
+new data/
+references/
+*.npy
+*.npz
+*.bmp
